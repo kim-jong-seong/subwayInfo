@@ -61,6 +61,8 @@ nav a:hover, nav a:focus-visible { color: var(--accent); text-decoration: underl
 /* 본문 */
 section { margin-bottom: 2.5rem; scroll-margin-top: 1.5rem; }
 h2 { font-size: 1.1rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.75rem; }
+h3 { font-size: 0.9rem; font-weight: 600; color: var(--faint); margin: 1.5rem 0 0.5rem; }
+h3:first-of-type { margin-top: 0; }
 .num { display: inline-block; min-width: 1.9rem; color: var(--accent); font-variant-numeric: tabular-nums; }
 p { margin: 0 0 1rem; color: var(--muted); }
 .wrap ul:not(nav ul) { margin: 0 0 1rem; padding-left: 1.2rem; color: var(--muted); }
