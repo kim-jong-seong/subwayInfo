@@ -3,27 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>지원 · 문의 · 이번 역은</title>
-<meta name="description" content="지하철 실시간 정보 앱 ‘이번 역은’의 사용 안내와 문의처입니다.">
+<title>자주 묻는 질문 · 이번 역은</title>
+<meta name="description" content="지하철 실시간 정보 앱 ‘이번 역은’을 쓰다 막히는 부분에 대한 안내와 문의처입니다.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="wrap">
   <header>
     <p class="app"><a href="index.html">이번 역은</a></p>
-    <h1>지원 · 문의</h1>
-    <p class="lede">앱을 쓰시다 막히는 부분이 있으면 아래를 먼저 확인해 주세요. 해결되지 않으면 이메일로 알려주시면 답변드리겠습니다.</p>
+    <h1>자주 묻는 질문</h1>
+    <p class="lede">앱을 쓰시다 막히는 부분이 있으면 아래를 먼저 확인해 주세요. 해결되지 않으면 맨 아래 문의처로 알려주시면 답변드리겠습니다.</p>
   </header>
 
-  <div class="card">
-    <dl>
-      <dt>문의 이메일</dt><dd><a href="mailto:ydh1078@naver.com">ydh1078@naver.com</a></dd>
-      <dt>응대 시간</dt><dd>평일 10:00 ~ 18:00 (주말 및 공휴일 제외)</dd>
-      <dt>개발자</dt><dd>JongSeong Kim</dd>
-    </dl>
-  </div>
-
-  <nav aria-label="목차"><h2>자주 묻는 질문</h2><ul><li><a href="#q1">실시간 도착 정보가 보이지 않습니다</a></li><li><a href="#q2">어떤 노선을 지원하나요</a></li><li><a href="#q3">위치 권한을 반드시 허용해야 하나요</a></li><li><a href="#q4">열차 위치가 실제와 조금 다릅니다</a></li><li><a href="#q5">‘지나는 중’은 무슨 뜻인가요</a></li><li><a href="#q6">‘시간표를 표시합니다’라고 나옵니다</a></li><li><a href="#q7">개인정보를 수집하나요</a></li></ul></nav>
+  <nav aria-label="목차"><h2>목차</h2><ul><li><a href="#q1">실시간 도착 정보가 보이지 않습니다</a></li><li><a href="#q2">어떤 노선을 지원하나요</a></li><li><a href="#q3">위치 권한을 반드시 허용해야 하나요</a></li><li><a href="#q4">열차 위치가 실제와 조금 다릅니다</a></li><li><a href="#q5">‘지나는 중’은 무슨 뜻인가요</a></li><li><a href="#q6">‘시간표를 표시합니다’라고 나옵니다</a></li><li><a href="#q7">개인정보를 수집하나요</a></li><li><a href="#q8">알림이 오지 않아요</a></li><li><a href="#q9">알림이 늦게 와요</a></li><li><a href="#q10">알림이 저절로 꺼졌어요</a></li><li><a href="#q11">알림을 받을 열차를 바꾸려면</a></li><li><a href="#contact">문의하기</a></li></ul></nav>
 
     <section id="q1">
       <h2><span class="num">1</span>실시간 도착 정보가 보이지 않습니다</h2>
@@ -65,9 +57,42 @@
       <p>광고를 표시하지 않으며 광고 식별자(IDFA)를 비롯한 어떤 추적 식별자도 사용하지 않습니다.</p>
       <p>자세한 내용은 개인정보처리방침에서 확인하실 수 있습니다.</p>
     </section>
+    <section id="q8">
+      <h2><span class="num">8</span>알림이 오지 않아요</h2>
+      <p>먼저 iOS 설정 &gt; 이번 역은 &gt; 알림에서 <strong>알림 허용</strong>이 켜져 있는지 확인해 주세요.</p>
+      <p>허용되어 있는데도 오지 않는다면 다음을 확인해 주세요.</p>
+      <ul><li><strong>집중 모드</strong>가 켜져 있으면 알림이 조용히 보류됩니다. 이번 역은을 집중 모드의 허용 목록에 넣으면 방해받지 않습니다.</li><li><strong>예약된 요약</strong>에 이번 역은이 포함되어 있으면 알림이 즉시 뜨지 않고 정해진 시각에 모여서 도착합니다. 설정 &gt; 알림 &gt; 예약된 요약에서 빼 주세요.</li><li>앱을 다시 설치하면 알림 주소가 새로 발급됩니다. 이 경우 알림을 한 번 껐다 켜 주세요.</li><li>열차가 종착역에 닿으면 알림이 자동으로 끝납니다. 알림을 켠 지 3시간이 지나도 마찬가지입니다.</li></ul>
+    </section>
+    <section id="q9">
+      <h2><span class="num">9</span>알림이 늦게 와요</h2>
+      <p>알림은 서울특별시가 제공하는 열차 위치 데이터를 근거로 보냅니다. 이 데이터 자체가 실제 상황보다 늦게 갱신되며, 실측한 지연은 보통 20초, 길게는 87초였습니다.</p>
+      <p>서버는 5초마다 열차를 확인하고 있어 확인 주기 때문에 늦는 것은 아닙니다. 다만 역과 역 사이가 1분 정도로 짧은 구간에서는 데이터 지연이 그 간격을 넘어서면서, 이미 역에 도착한 뒤에 알림이 도착할 수 있습니다.</p>
+      <p>이 지연은 원본 데이터에서 비롯되는 것이라 앱에서 줄일 방법이 없습니다. 알림을 하차 판단의 유일한 수단으로 삼지 말아 주세요.</p>
+    </section>
+    <section id="q10">
+      <h2><span class="num">10</span>알림이 저절로 꺼졌어요</h2>
+      <p>다음 경우에 알림이 자동으로 끝납니다.</p>
+      <ul><li>따라가던 열차가 종착역에 닿았을 때</li><li>알림을 켠 지 3시간이 지났을 때</li></ul>
+      <p>둘 다 정상 동작입니다. 계속 안내가 필요하시면 열차를 다시 선택해 알림을 켜 주세요.</p>
+    </section>
+    <section id="q11">
+      <h2><span class="num">11</span>알림을 받을 열차를 바꾸려면</h2>
+      <p>한 번에 한 대의 열차만 따라갑니다. 다른 열차의 알림을 켜면 이전 열차의 알림은 자동으로 꺼집니다. 따로 끄지 않으셔도 됩니다.</p>
+    </section>
+    <section id="contact">
+      <h2>문의하기</h2>
+      <p>위에서 해결되지 않는 문제나 건의하실 내용이 있으면 아래로 알려주세요.</p>
+      <div class="card">
+        <dl>
+          <dt>문의 이메일</dt><dd><a href="mailto:ydh1078@naver.com">ydh1078@naver.com</a></dd>
+          <dt>응대 시간</dt><dd>평일 10:00 ~ 18:00 (주말 및 공휴일 제외)</dd>
+          <dt>개발자</dt><dd>JongSeong Kim</dd>
+        </dl>
+      </div>
+    </section>
 
   <footer>
-    <div class="doclinks"><a href="index.html">개인정보처리방침</a><a href="terms.html">이용약관</a><span aria-current="page">지원 · 문의</span></div>
+    <div class="doclinks"><a href="index.html">개인정보처리방침</a><a href="terms.html">이용약관</a><span aria-current="page">자주 묻는 질문</span></div>
     <p>iOS 앱 &lsquo;이번 역은&rsquo;의 공식 문서입니다.</p>
     <p>실시간 지하철 정보 출처: 서울특별시 열린데이터광장 (공공누리 제1유형)</p>
   </footer>
